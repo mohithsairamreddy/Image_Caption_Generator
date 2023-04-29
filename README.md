@@ -26,4 +26,4 @@ Insert a valid Picture and hit generate captions.
 
 If everything goes well, you should  be able to see the predicted captions
 
-### Note:Can Use mages in test_cases folder for Verifying 
+### Note:Can Use Images in test_cases folder for Verifying 
