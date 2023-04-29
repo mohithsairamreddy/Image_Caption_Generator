@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Captions</title>
+</head>
+<body>
+    <div style="max-width: 800px; max-height: 500px; margin: 0 auto; padding: 20px;">
+        <h1 style="text-align: center; margin-bottom: 30px;">Generated Captions</h1>
+        <div style="display: flex; justify-content: center;">
+            <img src="{{ image_path }}" alt="Input Image" style="max-width: 100%; max-height: 500px; margin: 0 auto;">
+        </div>
+        <div style="margin-top: 30px;">
+            {% for caption in captions[:3] %}
+                <p style="max-width: 500px; margin: 0 auto 20px auto; text-align: center; font-size: 18px;">{{ caption }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

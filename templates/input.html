@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Captions</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+        
+        .file{
+            align-items: center;
+        }
+
+        .upload{
+            text-align: center;
+        }
+
+        .heading{
+            text-align: center;
+        }
+        .login-form {
+            background-color: #fff;
+            max-width: 400px;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin-top: 5px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #3e8e41;
+        }
+
+        .btn-block {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h1 class="heading">Generate Captions</h1>
+            <form method="post" action="{{ url_for('generate_captions') }}" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label class="upload" for="image">Upload Image:</label>
+                    <br>
+                    <input type="file" name="image" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Generate Captions</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
