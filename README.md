@@ -12,6 +12,7 @@ This project has three major parts :.
 
 ### Running the project
 1.Make User you have Prerequisites Libraries installed else install them
+```
 2. Run app.py using below command to start Flask API
 ```
 python app.py
